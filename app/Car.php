@@ -1,7 +1,7 @@
 <?php
 
 namespace App;
-
+##git test
 use Illuminate\Database\Eloquent\Model;
 
 class Car extends Model
