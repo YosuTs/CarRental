@@ -2,7 +2,11 @@
 
 namespace App;
 ##git test
+<<<<<<< HEAD
 ##master commit
+=======
+##git branch test -- Crazy experiment
+>>>>>>> crazy-experiment
 use Illuminate\Database\Eloquent\Model;
 
 class Car extends Model
