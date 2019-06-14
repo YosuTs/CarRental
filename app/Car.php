@@ -2,6 +2,7 @@
 
 namespace App;
 ##git test
+##master commit
 use Illuminate\Database\Eloquent\Model;
 
 class Car extends Model
