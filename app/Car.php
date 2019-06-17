@@ -2,11 +2,8 @@
 
 namespace App;
 ##git test
-<<<<<<< HEAD
 ##master commit
-=======
 ##git branch test -- Crazy experiment
->>>>>>> crazy-experiment
 use Illuminate\Database\Eloquent\Model;
 
 class Car extends Model
@@ -17,6 +14,7 @@ class Car extends Model
 
     public function category()
     {
-        return $this->belongsTo('App/Category');
+      #more git tests
+      return $this->belongsTo('App/Category');
     }
 }
