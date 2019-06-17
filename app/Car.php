@@ -15,6 +15,7 @@ class Car extends Model
     public function category()
     {
       #more git tests
+      #Another test branch
       return $this->belongsTo('App/Category');
     }
 }
