@@ -11,11 +11,21 @@
 |
 */
 
-Route::get('/', function () {
-  dd(\App\Category::all());
-    //return view('welcome');
-    //echo('test');
-});
+Route::get('/', [
+  'uses' => 'HomeController@index',
+  'as' => 'home.index'
+]);
+
+Route::post('/home', [
+  'uses' => 'HomeController@show_categories',
+  'as' => 'home.show_categories'
+]);
+
+Route::post('/categories', [
+  'uses' => 'CategoriesController@index',
+  'as' => 'categories.index'
+]);
+
 Route::get('/categories/', 'CategoriesController@index');
 
 //Route::get('/cars/create/', 'CarsController@create');
