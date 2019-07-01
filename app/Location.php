@@ -10,4 +10,7 @@ class Location extends Model
   {
     belongsToMany('\App\Location');
   }
+  protected $fillable = [
+    'name', 'is_airport', 'created_at', 'updated_at'
+  ];
 }

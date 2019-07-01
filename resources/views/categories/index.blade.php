@@ -1,9 +1,5 @@
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Laravel Testing</title>
-  </head>
-  <body>
+@extends('master')
+@section('content')
     <table>
       <thead>
         <th>ID</th>
@@ -24,6 +20,5 @@
         @endforeach
       </tbody>
     </table>
+  @endsection
     {{-- {!!$categories->render()!!} --}}
-  </body>
-</html>

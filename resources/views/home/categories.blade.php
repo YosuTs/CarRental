@@ -9,7 +9,6 @@
         <th>Name</th>
         <th>Cost</th>
         <th>Capacity</th>
-        <th>Number of vehicles</th>
       </thead>
       <tbody>
         @foreach ($categories as $category)
@@ -17,7 +16,6 @@
             <td>{{$category->name}}</td>
             <td>{{$category->cost}}</td>
             <td>{{$category->capacity}}</td>
-            <td>{{$category->cars->count()}}</td>
           </tr>
         @endforeach
       </tbody>

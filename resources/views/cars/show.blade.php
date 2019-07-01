@@ -1,9 +1,5 @@
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Cars</title>
-  </head>
-  <body>
+@extends('master')
+@section('content')
     <table>
       <thead>
         <th>ID</th>
@@ -24,5 +20,4 @@
         @endforeach
       </tbody>
     </table>
-  </body>
-</html>
+  @endsection

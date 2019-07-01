@@ -11,4 +11,11 @@ class Category extends Model
       return $this->hasMany('\App\Car');
     }
 
+    protected $fillable = [
+      'name', 'capacity', 'cost'
+    ];
+
 }
+
+// Costo de Renta
+// Reembolso

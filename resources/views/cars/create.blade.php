@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+@extends('master')
+@section('content')
     <form class="" action="{{route('cars.store')}}" method="post">
       {{csrf_field()}}
       <select class="" name="category_id">
@@ -20,5 +15,4 @@
       <input type="text" name="year" id="year" value="">
       <button type="submit" name="button">Create</button>
     </form>
-  </body>
-</html>
+  @endsection
